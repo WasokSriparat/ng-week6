@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-week6';
+  parentCount = 0;
+
+  addParentCount(){
+    this.parentCount++;
+  }
+
+  clearInParent(val:any){
+    this.parentCount = val;
+  }
+
 }
