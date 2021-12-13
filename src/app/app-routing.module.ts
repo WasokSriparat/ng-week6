@@ -4,14 +4,14 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductComponent } from './components/product/product.component';
-import { WebboardComponent } from './components/webboard/webboard.component';
+import { CartComponent } from './components/cart/cart.component';
 
 const routes: Routes = [
 {path: '', redirectTo: "/home", pathMatch:'full'},
 {path: 'home', component: HomeComponent}, 
 {path: 'about', component: AboutComponent}, 
 {path: 'product', component: ProductComponent},
-{path: 'webboard', component: WebboardComponent},
+{path: 'cart', component: CartComponent},
 {path: 'contact', component: ContactComponent},  
 ];
 
