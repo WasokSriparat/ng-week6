@@ -6,3 +6,18 @@
         <a routerLink="/about" class="btn btn-primary fs-5">View more</a>
     </div>
 </div>
+
+<div class="home-product d-flex flex-row bd-highlight justify-content-center mb-3">
+    <div *ngFor="let product of products" >
+        <div *ngIf="product.stock!=0">
+            <div class="card mx-2" style="width: 18rem;">
+                <img [src]="product.picture" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                <h5 class="card-title">{{product.name}}</h5>
+                <p>{{product.price}} <span class="text-primary">Bath</span></p>
+                <a routerLink="/cart"  class="btn btn-success">Buy</a>
+        </div>
+        </div>
+    </div>
+
+</div>
